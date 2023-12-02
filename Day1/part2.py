@@ -16,7 +16,6 @@ lines = file.readlines()
 for i in lines:
     for j in i:
         words += j
-        print(words)
         if (j.isdigit()):
             nums.append(int(j)*10)
             words=""
@@ -39,7 +38,6 @@ for i in lines:
         for k in numbers:
             if (k in words2):
                 nums[len(nums) - 1] += int(num_words[k])
-                #nums.append(int(num_words[k])*10)
                 truth = True
                 break
         if (truth):
@@ -47,7 +45,6 @@ for i in lines:
             words2 = ""
             break
     count += 1
-print(nums)
 sum = 0
 for i in nums:
     sum += i
